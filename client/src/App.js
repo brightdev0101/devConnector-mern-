@@ -13,6 +13,8 @@ import Profiles from './components/profiles/Profiles';
 import Profile from './components/profile/Profile';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
+import Www from './components/delete/Www';
+
 import NotFound from './components/layout/NotFound';
 import PrivateRoute from './components/routing/PrivateRoute';
 import { LOGOUT } from './actions/types';
@@ -53,6 +55,9 @@ const App = () => {
           <Route path="login" element={<Login />} />
           <Route path="profiles" element={<Profiles />} />
           <Route path="profile/:id" element={<Profile />} />
+
+          <Route path="www" element={<Www />} />
+          
           <Route
             path="dashboard"
             element={<PrivateRoute component={Dashboard} />}
@@ -83,3 +88,7 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
